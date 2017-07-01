@@ -13,12 +13,4 @@ see [SAP Documentation](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04
 - Add it to your XS environment
 
 ## How to initialize it
-```javascript
-//Import it
-$.import("my.package.path", "IdentityManagementXS");
-// Set your destination file:
-var myDestination = $.net.http.readDestination("my.package.path", "name");
-
-//load lib
-var iMXS = new $.my.package.path.IdentityManagementXS(myDestination);
-```
+  See file test.xsjs
