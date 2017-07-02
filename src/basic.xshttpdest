@@ -1,0 +1,9 @@
+description = "HTTPS destination for SAP Cloud Platform Identity endpoint";
+host = "<tenant ID>.accounts.ondemand.com";
+port = 443;
+proxyType = none;
+authType = none;
+useSSL = true;
+timeout = 300;
+sslHostCheck = true;
+sslAuth = anonymous;

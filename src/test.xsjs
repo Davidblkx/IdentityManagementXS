@@ -16,9 +16,10 @@ function loadPath(path){
 $.import(packagePath, "IdentityManagementXS");
 var IdentityMXS = loadPath(packagePath + ".IdentityManagementXS");
 //Remember destination file must be in same path that the xsjslib
-var dest = $.net.http.readDestination(packagePath, "template");
+var basic = $.net.http.readDestination(packagePath, "basic");
+var auth = $.net.http.readDestination(packagePath, "template");
 
-var manager = new IdentityMXS.IdentityManagementXS(dest);
+var manager = new IdentityMXS.IdentityManagementXS(basic, auth);
 
 var r = manager.searchUser("myID");
 
